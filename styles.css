@@ -1,0 +1,46 @@
+:root {
+  --base: #ffc600;
+  --spacing: 10px;
+  --blur: 10px;
+}
+
+canvas {
+  padding: var(--spacing);
+  background: var(--base);
+  filter: blur(var(--blur));
+  min-width: 90%;
+  height: 90%;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  max-height: 100vh;
+  min-width: 100%;
+  border: 10px dotted black;
+}
+
+main {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  width: 100px;
+}
+
+.controls {
+  margin: 100px;
+  height: auto;
+  max-width: 100%;
+}
